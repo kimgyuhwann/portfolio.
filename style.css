@@ -96,4 +96,7 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
      #navbar{flex-direction: column; align-items: flex-start;}
      .navbar_menu{flex-direction: column; text-align: center; width: 100%; display:none;}
      .About_majors{flex-direction: column;}
+     .skill_box{flex-direction: column;}
+     .box_right{padding-bottom:20px;}
+     .project{flex-grow:1;}
 }
