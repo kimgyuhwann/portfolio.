@@ -29,12 +29,12 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 
 /* About */
 
-.About_majors{display:flex; justify-content:space-around;}
+.About_majors{display:flex; justify-content:space-around; align-items: center;}
 .About_title{font-size:40px; margin-bottom:20px; padding-top:40px;}
 .major_logo{width: 170px; height: 170px; border-radius: 50%; border: 1px solid lightskyblue; margin-top:50px; margin-bottom:20px; color:lightskyblue;}
 .major_logo:hover i{color:pink; transform: rotate(-30deg) scale(1.1);}
 .major_title{font-size:30px; font-weight:1000;}
-.major_logo i{font-size:100px; line-height:170px; transition: all 300ms ease;}
+.major_logo{font-size:100px; line-height:170px; transition: all 300ms ease;}
 
 .About_jobs{margin-top: 50px; padding-bottom:40px;}
 .job{display:flex; align-items: center;}
@@ -87,3 +87,13 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 .contact_links i:hover{transform: scale(1.1); transition: all 300ms ease;}
 .contact_title{margin:12px 0;}
 .contact_links{margin:24px 0; font-size: 50px;}
+
+
+.navbar_toggle-btn{display:none;}
+
+@media screen and (max-width:768px){
+    .navbar_toggle-btn{display:inline-block; position: absolute; top:20px; right:10px; font-size:20px; color:white;}
+     #navbar{flex-direction: column; align-items: flex-start;}
+     .navbar_menu{flex-direction: column; text-align: center; width: 100%; display:none;}
+     .About_majors{flex-direction: column;}
+}
