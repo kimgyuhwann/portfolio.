@@ -13,33 +13,33 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-
-    <!-- navnar -->
-    <nav id="navbar">
-        <div class="navbar_logo">
-            <img src="imgs/GHGH.png">
-            <a>kimGH</a>
-        </div>
-        <ul class="navbar_menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">skills</a></li>
-            <li><a href="">My work</a></li>
-            <li><a href="">Testimonial</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
-    </nav>
-    <!--home   -->
-    <section id="home">
-        <img src="imgs/규환.jpg" class="home_avatar">
-        <h1 class="home_title">Hello,<br> I'm Dream Coder</h1>
-        <h2 class="home_description">Someday I hope to work for software engineer</h2>
-        <button class="home_button">CONTACT ME</button>
-    </section>
-
+    <!-- navbar -->
+    <div class="navbarandhome">
+        <nav id="navbar">
+            <div class="navbar_logo">
+                <i class="fas fa-star-of-life"></i>
+                    <a>Kimgh</a>
+            </div>
+            <ul class="navbar_menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">skills</a></li>
+                <li><a href="">My work</a></li>
+                <li><a href="">Testimonial</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
+        <!--home   -->
+        <section id="home" class="section">
+            <img src="imgs/규환.jpg" class="home_avatar">
+            <h1 class="home_title">Hello,<br> I'm Dream Coder</h1>
+            <h2 class="home_description">Someday I hope to work for software engineer</h2>
+            <button class="home_contect">CONTACT ME</button>
+        </section>
+    </div>
     <!-- About -->
-    <section id="About">
-        <h1 class="About_tilte">About me</h1>
+    <section id="About" class="section section_container">
+        <h1 class="About_title">About me</h1>
         <p>I have the will to learn anything, and I want to grow by trying my best. Currently, I have a lot of interest in front-end developers and I am full of passion. I don't have any experience in the developer's field yet, and I have experience working in the wireless communication department of the chemical company Solbrain and the telecommunication company.</p>
         <div class="About_majors">
             <div class="major">
@@ -60,66 +60,76 @@
         </div>
         <div class="About_jobs">
            <div class="job">
-               <img src="imgs/soulbrain.jpg" alt="logo">
-               <p class="job_name">Chemical Company Semiconductor Display</p>
-               <p class="job_period">2019-2020</p>
+               <img src="imgs/soulbrain.png" alt="logo">
+               <div class="job_description">
+                <p class="job_name">Chemical Company Semiconductor Display</p>
+                <p class="job_period">2019-2020</p>
+               </div>
            </div>
            <div class="job">
-               <img src="imgs/unnamed.jpg" alt="logo">
-               <p class="job_name">LG U+ Base Station Maintenance</p>
-               <p class="job_period">2015-2016</p>
+               <img src="imgs/Lg.png" alt="logo">
+               <div class="job_description">
+                <p class="job_name">LG U+ Base Station Maintenance</p>
+                <p class="job_period">2015-2016</p>
+               </div>
            </div>
         </div>
     </section>
     <!-- skills -->
-    <section id="skills">
-        <h1>Skills</h1>
-        <h2>skills & Attibutes</h2>
-        <p>passion for learning new technologies.capable of working within a team environment and independently. Ability to plan and time schedulem, work under strict time pressure and adapt quickly when needed.</p>
-        <div class="skill_box">
-            <div class="box_left">
-                <h3 class="box_title">skills</h3>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>HTML</span>
-                        <span>99%</span>
+    <section id="skills" class="section">
+       <div class="section_container">
+            <h1>Skills</h1>
+            <h2>skills & Attibutes</h2>
+            <p>passion for learning new technologies.capable of working within a team environment and independently. Ability to plan and time schedulem, work under strict time pressure and adapt quickly when needed.</p>
+            <div class="skill_box">
+                <div class="box_left">
+                    <h3 class="box_title">skills</h3>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width:90%;"></div>
+                        </div>
+                    </div>    
+                    <div class="skill">   
+                        <div class="skill_description">
+                            <span>css</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width:85%;"></div>
+                        </div>
                     </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
-                    </div>
-                    <div class="skill_description">
-                        <span>css</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
-                    </div>
-                    <div class="skill_description">
-                        <span>javascript</span>
-                        <span>77%</span>
-                    </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
-                    </div>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>javascript</span>
+                            <span>77%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width:77%;"></div>
+                        </div>
+                    </div>    
                 </div>
-            </div>
-            <div class="box_right">
-                <div class="tools">
-                    <h3 class="box_title">Tools</h3>
-                    <ul class="box_list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span></span></li>
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Visual Studio Code</span></li>
-                    </ul>
+                <div class="box_right">
+                    <div class="tools">
+                        <h3 class="box_title">Tools</h3>
+                        <ul class="box_list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span></span></li>
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Visual Studio Code</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">Etc</div>
+                        <span>Git</span>           
                 </div>
-                <div class="etc">Etc</div>
-                    <span>Git</span>           
             </div>
         </div>
     </section>
     <!-- my work -->
-    <section id="My Work">
+    <section id="My Work" class="section">
         <h1>My Work</h1>
         <h3>Projects</h3>
         <div class="my Work_list">
@@ -158,6 +168,16 @@
             </a>
         </div>
     </section>
-    <section id="contact"></section>
+
+    <!-- contact -->
+    <section id="contact" class="section">
+        <h1 class="contact_tilte">Let's talk</h1>
+        <h2 class="contact_email">kyuo9944@gmail.com</h2>
+        <div class="contact_links">
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+        </div>
+        <p class="contact_rights">Copyright ⓒ kimgyuhwan All rights reserved.</p>
+    </section>
 </body>
 </html>

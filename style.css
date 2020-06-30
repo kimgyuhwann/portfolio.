@@ -1,3 +1,64 @@
-#navbar{display:flex; justify-content:space-between;}
-.navbar_logo{align-items: center; vertical-align:middle;}
-.navbar_logo>img{width: 50px; height: 50px; text-align: center; align-items: center;}
+
+
+*{margin:0; padding:0;}
+.section{text-align: center; margin:auto;}
+.section_container{max-width: 1200px;margin:auto;}
+
+
+/* nav */
+
+#navbar{display:flex; justify-content: space-between; align-items: center; padding:20px 12px 20px 12px;}
+.navbar_logo{font-size: 20px;}
+.navbar_logo>i{color:lightskyblue;}
+.navbar_menu{display:flex; list-style: none;}
+.navbar_menu>li>a{padding:8px 12px; color:black; text-decoration: none; font-size: 20px;}
+
+.navbarandhome{background-color:gainsboro;}
+
+
+
+
+/* home */
+
+#home{margin:0 auto; text-align: center; padding:50px;}
+.home_avatar{width: 250px; height: 250px; border-radius: 50%; border: 3px solid lightskyblue;}
+.home_title{padding-top:50px; font-size: 40px;}
+.home_description{font-size:20px; padding:10px; font-weight: 200;}
+button{background-color: transparent; cursor: pointer; border:none; outline: none; font-size: 20px;}
+.home_contect{border:1px black solid; padding:10px 10px; border-radius: 4px; margin-top:30px;}
+
+
+/* About */
+
+.About_majors{display:flex; justify-content:space-around;}
+.About_title{font-size:40px; margin-bottom:20px; padding-top:40px;}
+.major_logo{width: 170px; height: 170px; border-radius: 50%; border: 1px solid lightskyblue; margin-top:50px; margin-bottom:20px; color:lightskyblue;}
+.major_logo:hover i{color:pink; transform: rotate(-30deg) scale(1.1);}
+.major_title{font-size:30px; font-weight:1000;}
+.major_logo i{font-size:100px; line-height:170px; transition: all 300ms ease;}
+
+.About_jobs{margin-top: 50px; padding-bottom:40px;}
+.job{display:flex; align-items: center;}
+.job_description{margin:0 16px; text-align: left;}
+.job_period,.job_name{color:lightgray;}
+.job_name{font-size:15px;}
+.job_period{font-size:12px;}
+.job>img{width:50px;border-radius: 50%;}
+
+/* skill */
+
+#skills{background-color: wheat; padding:40px 0;}
+.section_container>h1{font-size:40px;}
+.skill_box{display:flex; background-color: lightgrey; color:white; margin:20px 0;}
+.box_left{flex-basis: 60%; background-color: darkgray; padding:20px 40px;}
+.box_right{flex-basis: 40%;}
+.box_list{list-style: none;}
+.tools{background-color: gray;}
+.tools,.etc{padding:20px;}
+
+
+
+.skill{margin-bottom: 32px;}
+.skill_description{display:flex; justify-content: space-between;}
+.skill_bar{width: 100%; height:3px; background-color: gray;}
+.skill_value{height: 3px; background-color: orange;}
