@@ -12,9 +12,8 @@
 .navbar_logo{font-size: 20px; color:white;}
 .navbar_logo>i{color:white;}
 .navbar_menu{display:flex; list-style: none;}
-.navbar_menu>li{padding-right: 20px;}
-.navbar_menu>li>a{padding:8px 12px; color:white; text-decoration: none; font-size: 20px;}
-
+.navbar_menu_item{padding:8px 12px; color:white; text-decoration: none; font-size: 20px; cursor: pointer; margin-right: 20px;}
+.navbar_menu_item:hover{border:2px white solid; border-radius: 4px;}
 
 
 
