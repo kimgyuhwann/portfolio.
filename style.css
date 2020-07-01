@@ -7,19 +7,20 @@
 
 /* nav */
 
-#navbar{display:flex; justify-content: space-between; align-items: center; padding:20px 12px 20px 12px;}
+#navbar{display:flex; justify-content: space-between; align-items: center; padding:20px 12px 20px 12px; background-color:transparent; position: fixed; width: 100%; transition: all 300ms ease-in-out;}
+#navbar.navbar--dark{background-color:#b386cf;}
 .navbar_logo{font-size: 20px; color:white;}
 .navbar_logo>i{color:white;}
 .navbar_menu{display:flex; list-style: none;}
+.navbar_menu>li{padding-right: 20px;}
 .navbar_menu>li>a{padding:8px 12px; color:white; text-decoration: none; font-size: 20px;}
-.navbarandhome{background-color:pink;}
 
 
 
 
 /* home */
 
-#home{margin:0 auto; text-align: center; padding:50px;}
+#home{margin:0 auto; text-align: center; padding:50px; padding-top:120px; background: url(imgs/background.png) center/cover no-repeat;}
 .home_avatar{width: 250px; height: 250px; border-radius: 50%; border: 3px solid white;}
 .home_title{padding-top:50px; font-size: 40px;}
 .home_description{font-size:20px; padding:10px; font-weight: 200;}
@@ -46,7 +47,7 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 
 /* skill */
 
-#skills{background-color: pink; padding:40px 0;}
+#skills{background-color: #ba87ce; padding:40px 0;}
 .section_container>h1{font-size:40px;}
 .skill_box{display:flex; background-color: lightgrey; color:white; margin:20px 0;}
 .box_left{flex-basis: 60%; background-color: darkgray; padding:20px 40px;}
@@ -66,7 +67,7 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 .section>h1>h3{padding-top:8px;}
 .my_Worklist{padding:40px;}
 .category_btn{border:1px solid darkgray; padding:8px 45px; border-radius: 4px; font-size: 12px;}
-.category_btn.active,.category_btn:hover{background-color:pink; color:white;}
+.category_btn.active,.category_btn:hover{background-color:#ba87ce; color:white;}
 .category_count{color:orange; border-radius: 50%; color:white; width: 24px; height: 24px; display:inline-block; line-height: 24px; position: relative; top:-20px; left:4px; opacity: 0; transition: all 300ms ease;}
 .category_btn.active .category_count,
 .category_btn:hover .category_count{opacity: 1; top:0;}
@@ -80,7 +81,7 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 .project:hover .project_description{opacity: 0.8; transform: translateY(0px);}
 
 /* contact */
-#contact{ background-color: pink; padding:40px;}
+#contact{ background-color: #ba87ce; padding:40px;}
 .contact_title,.contact_email{color:white;}
 .contact_links,.contact_rights{color: white;}
 
