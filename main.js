@@ -43,14 +43,28 @@ document.addEventListener('scroll',()=>{
     }
 });
 
-arrow.addEventListener('click',()=>{
-    scrollIntoView('#home');
+const myworklist=document.querySelector('.my_Worklist');
+const workproject=document.querySelector('.work_project');
+const projects=document.querySelectorAll('.project');
+myworklist.addEventListener('click',(e)=>{
+    const filter=e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    workproject.classList.add('anim-out');
+    setTimeout(()=>{
+        projects.forEach((project) => {
+            if(filter ==='*' || filter === project.dataset.type){
+                project.classList.remove('invisible');
+            }else{
+                project.classList.add('invisible');
+            }
+        })
+        workproject.classList.remove('anim-out');}, 300);
 });
 
 
 
-
-
+arrow.addEventListener('click',()=>{
+    scrollIntoView('#home');
+});
 
 
 function scrollIntoView(selector){
