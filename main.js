@@ -34,9 +34,18 @@ document.addEventListener('scroll',()=>{
     home.style.opacity=1-window.scrollY/homeheight;
 });
 
+const arrow=document.querySelector('.Arrow');
+document.addEventListener('scroll',()=>{
+    if(window.scrollY > homeheight /2){
+        arrow.classList.add('visible');
+    } else {
+        arrow.classList.remove('visible');
+    }
+});
 
-
-
+arrow.addEventListener('click',()=>{
+    scrollIntoView('#home');
+});
 
 
 

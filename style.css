@@ -88,8 +88,13 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 .contact_title{margin:12px 0;}
 .contact_links{margin:24px 0; font-size: 50px;}
 
-
 .navbar_toggle-btn{display:none;}
+
+.Arrow{color:pink;font-size:50px; position: fixed; bottom:50px;right:20px; opacity:0; transition: all 300ms ease-in; pointer-events: none;}
+.Arrow.visible{opacity: 1; pointer-events: auto; }
+
+
+
 
 @media screen and (max-width:768px){
     .navbar_toggle-btn{display:inline-block; position: absolute; top:20px; right:10px; font-size:20px; color:white;}
