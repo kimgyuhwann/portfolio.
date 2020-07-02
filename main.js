@@ -20,6 +20,32 @@ navbarmenu.addEventListener('click',(event) => {
      return;
  }
     console.log(event.target.dataset.link);
-    const scroll=document.querySelector(link);
-    scroll.scrollIntoView({behavior:"smooth"});
+    scrollIntoView(link);
 });
+
+const contactme=document.querySelector('.home_contect');
+contactme.addEventListener('click',() =>{
+    scrollIntoView("#contact");
+});
+
+const home=document.querySelector('.home-1');
+const homeheight=home.getBoundingClientRect().height;
+document.addEventListener('scroll',()=>{
+    home.style.opacity=1-window.scrollY/homeheight;
+});
+
+
+
+
+
+
+
+
+
+
+
+function scrollIntoView(selector){
+    const scroll=document.querySelector(selector);
+    scroll.scrollIntoView({behavior:'smooth'});
+}
+
