@@ -8,8 +8,8 @@ body{font-family: 'Open Sans', sans-serif;}
 
 /* nav */
 
-#navbar{display:flex; justify-content: space-between; align-items: center; padding:20px 12px 20px 12px; background-color: transparent; position: fixed; width: 100%; transition:all 300ms ease-in-out;}
-#navbar.navbar--dark{background-color:#b386cf;}
+#navbar{display:flex; justify-content: space-between; align-items: center; padding:20px 12px 20px 12px; background-color: transparent; position: fixed; width: 100%; transition:all 300ms ease-in-out; z-index:1;}
+#navbar.navbar--dark{background-color:#b386cf; }
 .navbar_logo>a{font-size: 16px; color:white; text-decoration: none;}
 .navbar_logo>a>i{color:white;}
 .navbar_menu{display:flex; list-style: none;}
@@ -70,11 +70,11 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 .category_btn{border:1px solid darkgray; padding:8px 45px; border-radius: 4px; font-size: 12px;}
 .category_btn .active,.category_btn:hover{background-color:#ba87ce; color:white;}
 .category_count{color:orange; border-radius: 50%; color:white; width: 24px; height: 24px; display:inline-block; line-height: 24px; position: relative; top:-20px; left:4px; opacity: 0; transition: all 300ms ease;}
-.category_btn.active .category_count,
+.category_btn .active .category_count,
 .category_btn:hover .category_count{opacity: 1; top:0;}
  
 
-.work_project{display:flex; justify-content: center; padding-bottom: 50px; opacity: 1; transition: all 300ms ease-out;}
+.work_project{display:flex; justify-content: center; padding-bottom: 50px; opacity:1; transition: all 300ms ease-out;}
 .project{width:300px; height:300px; margin:2px; position: relative; display:flex; justify-content: center; align-items: center; background-color: lightgray; padding:0 8px;}
 .project>img{max-width: 100%; max-height: 100%;}
 .project_description{position: absolute; top:0; left: 0; background-color: black; width: 100%; height: 100%; opacity:0; color:white; display:flex; justify-content: center; flex-direction: column; transition: all 300ms ease; transform: translateY(10px);}
@@ -95,7 +95,7 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 .Arrow{color:#dbc9d7;font-size:50px; position: fixed; bottom:50px;right:20px; opacity:0; transition: all 300ms ease-in; pointer-events: none;}
 .Arrow.visible{opacity: 1; pointer-events: auto; }
 
-.navbar_toggle-btn{display:none;  position: absolute; top:23px; right:10px; font-size:20px; color:white;}
+.navbar_toggle-btn{display:none;  position: absolute; top:23px; right:10px; font-size:20px; color:white; z-index: 2;}
 
 
 @media screen and (max-width:768px){
