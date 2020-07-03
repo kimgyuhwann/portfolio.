@@ -21,6 +21,7 @@ navbarmenu.addEventListener('click',(event) => {
  }
     console.log(event.target.dataset.link);
     scrollIntoView(link);
+    navbarmenu.classList.remove('open');
 });
 
 const contactme=document.querySelector('.home_contect');
@@ -46,6 +47,7 @@ document.addEventListener('scroll',()=>{
 const myworklist=document.querySelector('.my_Worklist');
 const workproject=document.querySelector('.work_project');
 const projects=document.querySelectorAll('.project');
+
 myworklist.addEventListener('click',(e)=>{
     const filter=e.target.dataset.filter || e.target.parentNode.dataset.filter;
     workproject.classList.add('anim-out');
@@ -60,7 +62,10 @@ myworklist.addEventListener('click',(e)=>{
         workproject.classList.remove('anim-out');}, 300);
 });
 
-
+const toggleBtn=document.querySelector('.navbar_toggle-btn');
+toggleBtn.addEventListener('click', ()=>{ 
+    navbarmenu.classList.toggle('open');
+});
 
 arrow.addEventListener('click',()=>{
     scrollIntoView('#home');

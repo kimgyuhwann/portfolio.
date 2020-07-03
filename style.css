@@ -10,8 +10,8 @@ body{font-family: 'Open Sans', sans-serif;}
 
 #navbar{display:flex; justify-content: space-between; align-items: center; padding:20px 12px 20px 12px; background-color: transparent; position: fixed; width: 100%; transition:all 300ms ease-in-out;}
 #navbar.navbar--dark{background-color:#b386cf;}
-.navbar_logo{font-size: 16px; color:white;}
-.navbar_logo>i{color:white;}
+.navbar_logo>a{font-size: 16px; color:white; text-decoration: none;}
+.navbar_logo>a>i{color:white;}
 .navbar_menu{display:flex; list-style: none;}
 .navbar_menu_item{padding:4px; color:white; text-decoration: none; font-size:16px; cursor: pointer; margin-right: 20px; border:1px solid transparent; border-radius: 4px;}
 .navbar_menu_item:hover{border-color:white; background-color:#7d66c0 ;}
@@ -30,9 +30,10 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 
 /* About */
 
+#About{padding:40px 0px 40px 0px;}
 .About_majors{display:flex; justify-content:space-around; align-items: center;}
-.About_title{font-size:40px; margin-bottom:20px; padding-top:40px;}
-.major_logo{width: 170px; height: 170px; border-radius: 50%; border: 1px solid lightskyblue; margin-top:50px; margin-bottom:20px; color:lightskyblue;}
+.About_title{font-size:40px; margin-bottom:20px;}
+.major_logo{width: 170px; height: 170px; border-radius: 50%; border: 1px solid lightskyblue; margin:20px 0px; color:lightskyblue;}
 .major_logo:hover i{color:pink; transform: rotate(-30deg) scale(1.1);}
 .major_title{font-size:30px; font-weight:1000;}
 .major_logo{font-size:100px; line-height:170px; transition: all 300ms ease;}
@@ -62,12 +63,12 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 
 /* my work */
 
-.section{padding-top:40px;}
+#My_Work{padding:40px;}
 .section>h1{font-size:40px;}
 .section>h1>h3{padding-top:8px;}
 .my_Worklist{padding:40px;}
 .category_btn{border:1px solid darkgray; padding:8px 45px; border-radius: 4px; font-size: 12px;}
-.category_btn.active,.category_btn:hover{background-color:#ba87ce; color:white;}
+.category_btn .active,.category_btn:hover{background-color:#ba87ce; color:white;}
 .category_count{color:orange; border-radius: 50%; color:white; width: 24px; height: 24px; display:inline-block; line-height: 24px; position: relative; top:-20px; left:4px; opacity: 0; transition: all 300ms ease;}
 .category_btn.active .category_count,
 .category_btn:hover .category_count{opacity: 1; top:0;}
@@ -77,7 +78,8 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 .project{width:300px; height:300px; margin:2px; position: relative; display:flex; justify-content: center; align-items: center; background-color: lightgray; padding:0 8px;}
 .project>img{max-width: 100%; max-height: 100%;}
 .project_description{position: absolute; top:0; left: 0; background-color: black; width: 100%; height: 100%; opacity:0; color:white; display:flex; justify-content: center; flex-direction: column; transition: all 300ms ease; transform: translateY(10px);}
-.project_description h3::after{content:''; display:block; width: 25px; height: 2px; left:50%; margin-left: -12px; margin-top: 8px; background-color: white; position: relative; margin-bottom:8px;}
+.project_description>h3{color:orange;}
+.project_description h3::after{content:''; display:block; width: 50px; height: 2px; left:50%; margin-left: -12px; margin-top: 8px; background-color: white; position: relative; margin-bottom:8px; transform: translateX(-27%);}
 .project:hover .project_description{opacity: 0.8; transform: translateY(0px);}
 .project.invisible{display:none;}
 .work_project.anim-out{opacity:0; transform: scale(0.96) translateY(40px);}
@@ -87,23 +89,20 @@ button{background-color: transparent; cursor: pointer; border:none; outline: non
 #contact{ background-color: #ba87ce; padding:40px;}
 .contact_title,.contact_email{color:white;}
 .contact_links,.contact_rights{color: white;}
-
 .contact_links i:hover{transform: scale(1.1); transition: all 300ms ease;}
 .contact_title{margin:12px 0;}
 .contact_links{margin:24px 0; font-size: 50px;}
-
-.navbar_toggle-btn{display:none;}
-
 .Arrow{color:#dbc9d7;font-size:50px; position: fixed; bottom:50px;right:20px; opacity:0; transition: all 300ms ease-in; pointer-events: none;}
 .Arrow.visible{opacity: 1; pointer-events: auto; }
 
-
+.navbar_toggle-btn{display:none;  position: absolute; top:23px; right:10px; font-size:20px; color:white;}
 
 
 @media screen and (max-width:768px){
-    .navbar_toggle-btn{display:inline-block; position: absolute; top:20px; right:10px; font-size:20px; color:white;}
-     #navbar{flex-direction: column; align-items: flex-start;}
+    .navbar_toggle-btn{display:block; position: fixed;}
+     #navbar{flex-direction: column; align-items: flex-start; background-color:#ba87ce;}
      .navbar_menu{flex-direction: column; text-align: center; width: 100%; display:none;}
+     .navbar_menu.open{display:block;}
      .About_majors{flex-direction: column;}
      .skill_box{flex-direction: column;}
      .box_right{padding-bottom:20px;}
